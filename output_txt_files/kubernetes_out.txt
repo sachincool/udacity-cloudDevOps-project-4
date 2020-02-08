@@ -1,0 +1,5 @@
+
+NAME                      READY   STATUS    RESTARTS   AGE
+kube-ml-69fc6c879-ds77n   1/1     Running   0          19m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80

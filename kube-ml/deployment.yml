@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-ml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kube-ml
+  template:
+    metadata:
+      labels:
+        app: kube-ml
+
+    spec:
+      containers:
+        - name: kube-ml
+          image: sachincool/kube-ml
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
