@@ -19,3 +19,4 @@ kubectl get pods
 pod=`kubectl get pods -o=name | tr -d "\n"`
 kubectl port-forward $pod 8000:80
 
+bash make_prediction.sh
